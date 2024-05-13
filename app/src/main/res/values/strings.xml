@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Absensi Online</string>
+    <string name="logout">LOGOUT</string>
+    <string name="header_logo">Mahasiswa Politeknik Negeri Madiun</string>
+    <string name="title_app">DASHBOARD PRESENSI</string>
+    <string name="nama_profile">NAMA: Bagus prasetyo</string>
+    <string name="nim">NIM : 233307096</string>
+    <string name="submit_presensi">Submit Presensi</string>
+    <string name="hide_presensi">Sembunyikan Detail Presensi</string>
+    <string name="txt_logout">Logout</string>
+    <string name="txt_detail_presensi">Kamu telah melakukan presensi pada pukul</string>
+    <string name="txt_presensi">Presensi telah berhasil</string>
+    <string name="txt_reminder">SILAHKAN LOGIN AGAR DAPAT MELAKUKAN ABSENSI</string>
+    <string name="txt_login">LOGIN</string>
+    <string name="txt_question1">Buka Sistem Informasi Akademik PNM?</string>
+    <string name="txt_siakad">Siakad</string>
+</resources>
