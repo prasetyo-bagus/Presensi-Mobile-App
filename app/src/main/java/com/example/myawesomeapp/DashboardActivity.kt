@@ -39,6 +39,11 @@ class DashboardActivity : AppCompatActivity() {
             }
         }
 
+        binding.btnInfoKelas.setOnClickListener {
+            val intent = Intent(this, DetailKelasActivity::class.java)
+            startActivity(intent)
+        }
+
         binding.btnLogout.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)

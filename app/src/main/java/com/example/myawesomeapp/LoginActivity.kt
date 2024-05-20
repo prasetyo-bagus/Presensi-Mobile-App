@@ -52,7 +52,7 @@ class LoginActivity : AppCompatActivity() {
         // hardcode validate user
         val isUsernameValid = username == "Bagus Prasetyo"
         val isNimValid = nim == "233307096"
-        val isPasswordValid = password == "teknologiInformasi"
+        val isPasswordValid = password == "123"
 
         return isUsernameValid && isNimValid && isPasswordValid
     }

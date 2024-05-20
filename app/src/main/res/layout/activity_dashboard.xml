@@ -160,10 +160,8 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:backgroundTint="@color/white"
-        app:layout_constraintTop_toTopOf="@+id/guideline_horizontal_three"
-        tools:layout_editor_absoluteX="32dp">
-
-    </com.google.android.material.card.MaterialCardView>
+        app:layout_constraintTop_toTopOf="@+id/guideline_horizontal_three">
+        </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/imageCard2"
@@ -189,7 +187,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/nama_profile"
-        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/secondCard"
@@ -201,12 +198,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/nim"
-        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/secondCard"
-        app:layout_constraintStart_toStartOf="@+id/guideline_horizontal_six"
-        app:layout_constraintTop_toBottomOf="@+id/namaDashboard" />
+        app:layout_constraintEnd_toEndOf="@+id/secondCard"
+        app:layout_constraintStart_toStartOf="@+id/secondCard"
+        app:layout_constraintTop_toBottomOf="@+id/namaDashboard">
+
+    </TextView>
 
     <Button
         android:id="@+id/btn_presensi"
@@ -228,13 +227,15 @@
         android:backgroundTint="@color/white"
         android:outlineProvider="none"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline_horizontal_nine"></com.google.android.material.card.MaterialCardView>
+        app:layout_constraintTop_toTopOf="@+id/guideline_horizontal_nine">
+    </com.google.android.material.card.MaterialCardView>
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/groupPresensi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:constraint_referenced_ids="threeCard,presensi,presensi2,currentTime"></androidx.constraintlayout.widget.Group>
+        app:constraint_referenced_ids="threeCard,presensi,presensi2,currentTime">
+    </androidx.constraintlayout.widget.Group>
 
     <TextView
         android:id="@+id/presensi"
@@ -281,7 +282,7 @@
 
     <Button
         android:id="@+id/btn_logout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:backgroundTint="@color/black"
@@ -291,5 +292,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnInfoKelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/info_kelas"
+        app:layout_constraintBottom_toTopOf="@+id/btn_logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/threeCard">
+
+    </Button>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
